@@ -14,4 +14,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/products', \App\Livewire\ProductsManagement::class)->name('products');
 });
+
